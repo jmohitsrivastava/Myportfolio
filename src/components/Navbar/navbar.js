@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
-import {Link as LinkR} from "react-router-dom"
+import {Link as LinkR, useNavigate} from "react-router-dom"
 import { DiCssdeck} from "react-icons/di";
 import {FaBars} from "react-icons/fa"
 
@@ -192,7 +192,7 @@ const Navbar = () => {
                 <NavLink href="#education">Education</NavLink>
             </NavItems>
             <ButtonContainer>
-                <GitHubButton>Github Profile</GitHubButton>
+                <GitHubButton >Github Profile</GitHubButton>
             </ButtonContainer>
         </NavbarContainer>
          
@@ -215,7 +215,7 @@ const Navbar = () => {
             
             <GitHubButton
              style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} 
-             href="github" target="_blank">Github Profile</GitHubButton>
+             href="https://github.com/jmohitsrivastava?tab=repositories" target="_blank">Github Profile</GitHubButton>
           </MobileMenu>}
     </Nav>
   )
